@@ -15,7 +15,7 @@ namespace App2
             InitializeComponent();
             StackLayout stackLayout = new StackLayout();
 
-            Button button_red = new Button
+            Button button_red = new Button//красный
             {
                 Text = "Red",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button)),
@@ -30,7 +30,7 @@ namespace App2
             this.Content = stackLayout;
 
 
-            Button button_yellow = new Button
+            Button button_yellow = new Button//желтый
             {
                 Text = "Yellow",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button)),
@@ -45,7 +45,7 @@ namespace App2
             this.Content = stackLayout;
 
 
-            Button button_green = new Button
+            Button button_green = new Button//зеленый
             {
                 Text = "Green",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Button)),
@@ -60,25 +60,22 @@ namespace App2
             this.Content = stackLayout;
         }
 
-        private void OnButtonClicked_Red(object sender, System.EventArgs e)
+        private void OnButtonClicked_Red(object sender, System.EventArgs e)//действие на нажание кнопки "красный"
         {
             Button button_red = (Button)sender;
-            //button.Text = "Нажато!";
             BackgroundColor = Color.Red;
         }
 
-        private void OnButtonClicked_Yellow(object sender, System.EventArgs e)
+        private void OnButtonClicked_Yellow(object sender, System.EventArgs e)//действие на нажатие кнопки "желтый"
         {
             Button button_yellow = (Button)sender;
-            //button.Text = "Нажато!";
             BackgroundColor = Color.LightYellow;
         }
 
 
-        private void OnButtonClicked_Green(object sender, System.EventArgs e)
+        private void OnButtonClicked_Green(object sender, System.EventArgs e)//действие на нажатие кнопки "зеленый"
         {
             Button button_green = (Button)sender;
-            //button.Text = "Нажато!";
             BackgroundColor = Color.Green;
         }
 
