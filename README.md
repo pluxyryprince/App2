@@ -1,2 +1,2 @@
 Код приложения находится в файле MainPage.xaml.cs<br>
-Папка App/App
+Папка App2/App2
